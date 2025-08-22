@@ -1,30 +1,31 @@
+#!/opt/homebrew/bin/python3 
 import turtle
-ma_tortue = turtle.Turtle()
-ma_tortue.color("red")
-ma_tortue.width(10)
+t = turtle.Turtle()
+t.color("yellow")
+t.width(10)
 
-ma_tortue.left(90)
-def quatre_ligne():
-    for i in range(4):
-        ma_tortue.pendown()
-        ma_tortue.forward(50)
-        ma_tortue.backward(50)
-        ma_tortue.right(20)
-
-
-ma_tortue.forward(50)
+t.left(90)
 def etoille():
     for _ in range(5):
-        ma_tortue.forward(50)
-        ma_tortue.right(144)
-    ma_tortue.penup()
-    ma_tortue.forward(150)
-    ma_tortue.pendown()
+        t.forward(50)
+        t.right(144)
+    t.penup()
+    t.forward(150)
+    t.pendown()
+
 for _ in range(3):
     etoille()
-    ma_tortue.right(120)
-    ma_tortue.penup()
-    ma_tortue.forward(150)
-quatre_ligne()
+    t.right(120)
+
+t.left(90)
+t.penup()
+t.forward(150)
+t.pendown()
+t.color("black")
+
+for _ in range(4):
+    t.forward(50)
+    t.backward(50)
+    t.right(20)
+
 turtle.done()
-# pas fini
