@@ -2,6 +2,6 @@ import turtle
 ma_tortue = turtle.Turtle()
 for _ in range(4):
     ma_tortue.forward(100)
-    ma_tortue.right(144)
+    ma_tortue.right(90)
 
 turtle.done()
